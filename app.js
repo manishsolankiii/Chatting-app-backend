@@ -49,6 +49,7 @@ const corsOptions = {
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization']
   // preflightContinue: true,
 };
 
@@ -70,7 +71,7 @@ app.use("/api/v1/user",userRoute)
 app.use("/api/v1/chat",chatRoute)
 app.use("/api/v1/admin",adminRoute)
 app.get("/",(req,res) => {
-    res.send("Hello World");
+    res.send("Hello Worl");
 })
 
 
