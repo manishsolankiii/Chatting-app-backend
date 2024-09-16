@@ -71,7 +71,7 @@ app.use("/api/v1/user",userRoute)
 app.use("/api/v1/chat",chatRoute)
 app.use("/api/v1/admin",adminRoute)
 app.get("/",(req,res) => {
-    res.send("Hello Worl");
+    res.send("Hello World");
 })
 
 
